@@ -45,10 +45,14 @@ header{
 
 }
 
-.left img {
-    width:30px;
+
+.left video{
+    width:70px;
     margin:0 15px ;
-    border-radius: 50%;
+    border-radius: 40%;
+    background-color: rgba(0,0,69,0.30);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #727fde65;
 }
 
 header ul {
@@ -93,14 +97,115 @@ header ul a{
     color: black;
     box-shadow: 0 0 15px #727fde6f;
 }
+.blackhole-box{
+    position: absolute;
+    top:40px;
+    width: 100%;
+    mix-blend-mode: lighten;
+}
+
+.blackhole-box video{
+    width: 20%;
+    height: 100px; 
+    margin-left: 500px;
+    margin-top:4;
+    z-index: 1;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+      
+.video-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1; 
+  }
+
+  .hero-info{
+    position: absolute;
+    left: 5%;
+  }
+
+  
+  .hero-info button:hover {
+    background-color:#727fde;
+  }
+  
+   .hero-info h1{
+    font-size: 60px;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   }
+   .hero-info p{
+    max-width: 550px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+   }
+
+   .hero-info button{
+    color: white;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 1px solid #727fde;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #727fde86;
+    cursor: pointer;
+   }
+
+   .hero-info button:hover{
+   box-shadow: 0 0 15px #727fde;
+   }
+
+   .gradient{
+    background: linear-gradient(to right, #008baa,#7e42a7, #6600c5, #6070fd, #2a46ff,#0099ff) ;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+   }
 
 
+   @keyframes animate-gradient {
+    to{
+        background-position: 200%;
+    }
+   }
 
 
+   .hero-vid-box{
+    position: absolute;
+    right: 3%;
+   }
 
-
-
-
+   .hero-vid-box video{
+    height: 400px;
+    width: 500px;
+   }
 
 
 
